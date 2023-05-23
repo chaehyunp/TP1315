@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:title="홈"
+        android:enabled="true"
+        android:icon="@drawable/icon_home"/>
+
+    <item
+        android:id="@+id/shop"
+        android:title="쇼핑"
+        android:enabled="true"
+        android:icon="@drawable/icon_shop"/>
+
+    <item
+        android:id="@+id/share"
+        android:title="집들이"
+        android:enabled="true"
+        android:icon="@drawable/icon_share"/>
+
+    <item
+        android:id="@+id/order"
+        android:title="내주문"
+        android:enabled="true"
+        android:icon="@drawable/icon_order"/>
+</menu>
