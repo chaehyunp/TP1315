@@ -11,10 +11,11 @@ import com.google.android.material.navigation.NavigationBarView
 class MainActivity : AppCompatActivity() {
 
     val binding by lazy { ActivityMainBinding.inflate(layoutInflater) }
-    val homeUrl = "testhue96.dothome.co.kr/home.html/"
-    val shopUrl = "testhue96.dothome.co.kr/shop.html/"
-    val shareUrl = "testhue96.dothome.co.kr/share.html/"
-    val orderUrl = "testhue96.dothome.co.kr/order.html/"
+    val homeUrl = "http://testhue96.dothome.co.kr/1315/index.html"
+    val wineUrl = "http://testhue96.dothome.co.kr/1315/wine.html"
+    val menuUrl = "http://testhue96.dothome.co.kr/1315/menu.html"
+    val mapUrl = "http://testhue96.dothome.co.kr/1315/map.html"
+    val helpUrl = "http://testhue96.dothome.co.kr/1315/help.html"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
@@ -38,15 +39,23 @@ class MainActivity : AppCompatActivity() {
             R.id.home -> {
                 binding.webview.loadUrl(homeUrl ?: "")
             }
-            R.id.shop -> {
-                binding.webview.loadUrl(shopUrl ?: "")
+            R.id.wine -> {
+                binding.webview.loadUrl(wineUrl ?: "")
             }
-            R.id.share -> {
-                binding.webview.loadUrl(shareUrl ?: "")
+            R.id.menu -> {
+                binding.webview.loadUrl(menuUrl ?: "")
             }
-            R.id.order -> {
-                binding.webview.loadUrl(orderUrl ?: "")
+            R.id.map -> {
+                binding.webview.loadUrl(mapUrl ?: "")
+            }
+            R.id.help -> {
+                binding.webview.loadUrl(helpUrl ?: "")
             }
         }
+    }
+
+    override fun onBackPressed() {
+        if(binding.webview.canGoBack()) binding.webview.goBack()
+        else finish()
     }
 }

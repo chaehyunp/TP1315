@@ -3,25 +3,31 @@
 
     <item
         android:id="@+id/home"
-        android:title="홈"
+        android:title="HOME"
         android:enabled="true"
         android:icon="@drawable/icon_home"/>
 
     <item
-        android:id="@+id/shop"
-        android:title="쇼핑"
+        android:id="@+id/wine"
+        android:title="WINE"
         android:enabled="true"
-        android:icon="@drawable/icon_shop"/>
+        android:icon="@drawable/icon_wine"/>
 
     <item
-        android:id="@+id/share"
-        android:title="집들이"
+        android:id="@+id/menu"
+        android:title="MENU"
         android:enabled="true"
-        android:icon="@drawable/icon_share"/>
+        android:icon="@drawable/icon_menu"/>
 
     <item
-        android:id="@+id/order"
-        android:title="내주문"
+        android:id="@+id/map"
+        android:title="MAP"
         android:enabled="true"
-        android:icon="@drawable/icon_order"/>
+        android:icon="@drawable/icon_map"/>
+
+    <item
+        android:id="@+id/help"
+        android:title="HELP"
+        android:enabled="true"
+        android:icon="@drawable/icon_help"/>
 </menu>
