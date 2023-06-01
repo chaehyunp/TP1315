@@ -16,11 +16,12 @@
         android:id="@+id/bnv"
         android:layout_width="match_parent"
         android:layout_height="72dp"
+        android:paddingVertical="4dp"
         app:itemIconTint="@drawable/navi_click_color"
         app:itemTextColor="@drawable/navi_click_color"
-        app:labelVisibilityMode="unlabeled"
+        app:labelVisibilityMode="labeled"
         android:layout_alignParentBottom="true"
         app:menu="@menu/menu_bnv"
-        app:itemIconSize="44dp" />
+        app:itemIconSize="24dp" />
 
 </RelativeLayout>
