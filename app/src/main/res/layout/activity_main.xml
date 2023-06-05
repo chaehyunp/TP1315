@@ -22,6 +22,7 @@
         app:labelVisibilityMode="labeled"
         android:layout_alignParentBottom="true"
         app:menu="@menu/menu_bnv"
-        app:itemIconSize="24dp" />
+        app:itemIconSize="24dp"
+        android:theme="@style/Widget.BottomNavigationView"/>
 
 </RelativeLayout>
